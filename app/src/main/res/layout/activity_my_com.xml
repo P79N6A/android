@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bean"
+    android:layout_height="match_parent"
+    tools:context="com.judian.goule.gjm.activity.SorderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我收到的赞/评论"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/comment"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textColor="@color/dark_grey"
+            android:text="我发出的赞/评论"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="15dp"
+            android:visibility="gone"
+            android:layout_height="15dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/bg_num"
+            android:gravity="center"
+            android:text="15"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            android:layout_alignBottom="@+id/tv1"
+            />
+
+    </RelativeLayout>
+
+
+
+    <com.example.ccy.ccyui.view.MyGridView
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="@dimen/dp_2"
+        android:verticalSpacing="@dimen/dp_2"
+        android:id="@+id/myGv"
+        ></com.example.ccy.ccyui.view.MyGridView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

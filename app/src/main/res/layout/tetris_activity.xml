@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tetris_rll_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--要分享的view-->
+    <LinearLayout
+        android:id="@+id/tetris_ll_ccy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/tetris_image"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_jian2"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_fan"
+                            android:gravity="center"
+                            android:text="券"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tetris_commodity_ticket_pic_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp_4"
+                            android:paddingRight="@dimen/dp_4"
+                            android:text="0.00"
+                            android:textColor="#ff6563"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="现价:"
+                        android:textColor="#B6B6B6"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tetris_commodity_pic2_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45.00"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tetris_commodity_pic1_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll1"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:layout_marginLeft="10dp"
+                    android:text="原价"
+                    android:textColor="#B6B6B6" />
+
+                <TextView
+                    android:id="@+id/commodity_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingExtra="@dimen/dp_4"
+                    android:maxLines="3"
+                    android:text="标题"
+                    android:textColor="#505050"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tetris_qr_code"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="长按识别二维码"
+                    android:textColor="#F47645"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="155dp"
+                    android:layout_height="155dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@mipmap/ermbg" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--上层view-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tetris_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/commodity_details_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/goods_back" />
+    <!--分享赚-->
+    <RelativeLayout
+        android:id="@+id/tetril_fenxiang_zhuan_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/tetris_background_tubiao">
+
+        <ImageView
+            android:id="@+id/tetris_fenxiang_zhuan_image_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ioc_fenxiang_zhuan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tetris_fenxiang_zhuan_image_iv"
+            android:text="分享赚 ¥ 2532.00"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <!--升级赚-->
+    <RelativeLayout
+        android:id="@+id/tetril_shengji_zhuan_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/tetris_background_tubiao">
+
+        <ImageView
+            android:id="@+id/tetris_shengji_zhuan_image_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ioc_shengji_zhuan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tetris_shengji_zhuan_image_iv"
+            android:text="升级赚 ¥ 2532.00"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <!--免单补贴-->
+    <RelativeLayout
+        android:id="@+id/tetril_miandan_butie_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/tetris_background_tubiao">
+
+        <ImageView
+            android:id="@+id/tetris_mian_dan_image_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ioc_miandan_butie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tetris_mian_dan_image_iv"
+            android:text="免单补贴 ¥ 2532.00"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bm"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F2F2F2">
+
+        <RelativeLayout
+            android:id="@+id/commodity_details_collect_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/commodity_details_collect_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/commodity_details_selected1" />
+
+            <TextView
+                android:id="@+id/commodity_details_collect_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="16dp"
+                android:text="收  藏"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commodity_details_share1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#e64b1b">
+
+            <TextView
+                android:id="@+id/commodity_details_share1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="分享赚¥0.00"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commodity_details_share2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#d61a3e">
+
+            <TextView
+                android:id="@+id/commodity_details_share2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="自买赚¥0.00"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

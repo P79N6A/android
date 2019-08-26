@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/login_form_log_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <ImageView
+        android:id="@+id/login_form_log_image_iv"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/welcome_skip_rl"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shixinyuan_ban_touming">
+
+        <TextView
+            android:id="@+id/welcome_skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3 跳过"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

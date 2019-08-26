@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/ioc_title">
+
+        <RelativeLayout
+            android:id="@+id/my_center_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/white_back" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="联系客服"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_save_view_rl"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/ioc_my_service_yuanbao">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/center_service_code"
+            android:layout_width="213dp"
+            android:layout_height="213dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ioc_kefu_xiaoshou" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="要找圆宝妹？ 请搜索关注“购了商城”公众号"
+        android:textColor="@color/text_view" />
+
+    <TextView
+        android:id="@+id/center_save_qr_chou_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shixinyuan_login"
+        android:gravity="center"
+        android:text="保存二维码到手机"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/center_weixin_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shixinyuan_kefu"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="服务时间：周一至周五 9:00 - 18:00"
+        android:textColor="#666666"
+        android:textSize="12dp" />
+    <!--旧的 需要的时候开出来 QQ客服-->
+    <RelativeLayout
+        android:id="@+id/qqR"
+        style="@style/MyItemArea"
+        android:layout_width="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/center4"
+            style="@style/MyItemImage"
+            android:background="@mipmap/qq" />
+
+        <TextView
+            android:id="@+id/qqTv"
+            style="@style/MyItemTv"
+            android:layout_toRightOf="@id/center4"
+            android:text="QQ客服 :" />
+
+        <ImageView style="@style/MyItemImage2" />
+    </RelativeLayout>
+
+    <!--旧的 需要的时候开出来 联系电话-->
+    <RelativeLayout
+        android:id="@+id/phone"
+        style="@style/MyItemArea"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/phone1"
+            style="@style/MyItemImage"
+            android:background="@mipmap/ww" />
+
+        <TextView
+            android:id="@+id/phoneTv"
+            style="@style/MyItemTv"
+            android:layout_toRightOf="@id/phone1"
+            android:text="联系电话: " />
+
+        <ImageView style="@style/MyItemImage2" />
+    </RelativeLayout>
+
+</LinearLayout>

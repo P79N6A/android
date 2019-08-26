@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_system_messages_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="13dp"
+            android:text="购了商城全新上线"
+            android:textColor="#292929"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:id="@+id/item_system_messages_con_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_system_messages_title_tv"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:text="成功成功成功成功成功成功成功成功成功成功成功成功成功成功成功成功成功"
+            android:textColor="#292929"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_system_messages_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_system_messages_con_tv"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:text="今日 15：30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/item_system_messages_time_tv"
+            android:background="#f2f2f2"
+            />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

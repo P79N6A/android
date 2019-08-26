@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:makeramen="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/group_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/live_person"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:riv_oval="false"
+            android:src="@mipmap/logo"
+            android:layout_marginRight="10dp"
+            app:riv_corner_radius="5dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginRight="@dimen/dp_30"
+            android:background="@mipmap/live_chat"
+            android:orientation="vertical">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/live_image"
+                android:layout_width="100dp"
+                fresco:roundedCornerRadius="5dp"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/live_person1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/logo"
+            app:riv_corner_radius="5dp"
+            app:riv_oval="false" />
+
+
+        <LinearLayout
+            android:paddingRight="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:background="@mipmap/live_chat"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/live_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="fff"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:text=""
+
+                    android:id="@+id/info"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="@dimen/dp_6"
+                    android:textColor="@color/main" />
+
+
+                <TextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                         android:paddingTop="@dimen/dp_6"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_weight="5"
+                    android:background="@drawable/live_copy"
+                    android:gravity="center"
+                    android:text="领券购买"
+                    android:textColor="@color/white"
+                    android:drawableRight="@mipmap/live_tag2"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:text="2000"
+              android:textSize="12sp"
+              android:id="@+id/time"
+              android:textColor="#C3C3C3"
+              android:layout_marginBottom="@dimen/dp_10"
+              android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

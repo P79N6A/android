@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_address_xinjian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+  >
+
+    <RelativeLayout
+        android:id="@+id/addEd_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+       >
+
+        <ImageButton
+            android:id="@+id/addEd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/icon_back" />
+
+        <TextView
+            style="@style/main_top_tv"
+            android:text="地址填写"
+            android:textColor="@color/dark_grey"
+            android:id="@+id/addEd_top_tv"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:background="@drawable/bg_kit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/dp_20"
+        android:text="保存"
+        android:id="@+id/baocun"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        />
+    <com.example.ccy.ccyui.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addEd_top"
+        android:layout_above="@id/baocun"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/baen"
+                />
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                style="@style/MyItemArea"
+                >
+                <TextView
+                    style="@style/MyItemTv"
+                    android:text="所在地区:"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:id="@+id/addEd_city"
+                    style="@style/MyAddress"
+                    android:text="  点 击 选 择"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/baen"
+                />
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                style="@style/MyItemArea"
+              >
+                <TextView
+                    style="@style/MyItemTv"
+                    android:text="详细地址:"
+                    android:layout_marginLeft="12dp"/>
+
+                <EditText
+                    android:id="@+id/addEd_add"
+                    android:singleLine="true"
+                    style="@style/MyAddress"
+                    android:background="@color/white"
+                    android:hint="请填写详细地址"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/baen"
+                />
+        </LinearLayout>
+    </com.example.ccy.ccyui.view.MyScrollView>
+
+</RelativeLayout>

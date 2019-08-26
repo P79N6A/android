@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.judian.goule.store.activity.AliinfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/title_bar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="200dp">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:src="@mipmap/kitimg2"
+
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_height="@dimen/dp_10"/>
+
+
+
+
+        <!--支付宝-->
+        <RelativeLayout
+            style="@style/kt_ll"
+            android:id="@+id/ali">
+            <TextView
+                style="@style/kt_tv"
+                android:text="支付宝账号"/>
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="@dimen/dp_10"
+               android:layout_centerVertical="true"
+                android:id="@+id/aliTv"
+                android:text=""
+               android:textSize="18sp"
+                 android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/baen"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_height="1dp"/>
+        <!--手机号-->
+        <RelativeLayout
+            style="@style/kt_ll"
+            android:id="@+id/tel">
+            <TextView
+                style="@style/kt_tv"
+                android:text="真实姓名"
+                android:id="@+id/telTv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:id="@+id/name"
+                android:text=""
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/baen"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_height="1dp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

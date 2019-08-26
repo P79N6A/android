@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bean"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/taoTab"
+        style="@style/MyTabLayoutStyle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/addOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCE5C5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/addTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_6"
+            android:text="下单了，却没有记录，请关联订单号!"
+            android:textColor="@color/main"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/taoVp"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

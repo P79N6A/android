@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/activity_add"
+    android:layout_height="match_parent"
+    tools:context="com.judian.goule.store.activity.SorderActivity">
+
+    <include
+        layout="@layout/common_layout"
+              android:visibility="gone"
+       ></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="开始晒单"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/commit"
+             android:layout_centerVertical="true"
+            android:textColor="@color/dark_grey"
+            android:text="提交晒单"
+            android:background="@drawable/bg_addorder"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+           />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--支付宝-->
+            <LinearLayout
+                android:id="@+id/ali"
+                style="@style/kt_ll">
+                <EditText
+                    android:id="@+id/title"
+                    style="@style/kt_et"
+                    android:layout_toRightOf="@+id/kit_tx_iv"
+                    android:hint="拟一个标题，脱颖而出"
+                    android:textColorHint="@color/bean2"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/baen"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="关于剁手后的获奖感言、购物的省钱心得，或者你的吐槽大会，任何你想说的都可以给大伙分享哦~"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:minLines="8"
+                    android:textColorHint="@color/bean2"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv1"
+                        android:text="小提示：被点赞或者加精，也可以获得积分哦"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_10"/>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_centerVertical="true"
+                        android:text="不少于20个字"
+                        android:textColor="@color/bean2"
+                        android:textSize="@dimen/sp_12"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/baen"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="@dimen/dp_2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/addorder2"/>
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="@dimen/dp_2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/addorder2"/>
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="@dimen/dp_2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/addorder2"/>
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:padding="@dimen/dp_2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/addorder2"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_2"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/addorder2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:text="最少上传1张，最多上传5张"
+                        android:textColor="@color/bean2"
+                        android:textSize="@dimen/sp_12"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:background="@color/baen"
+    android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bean"
+    android:layout_height="match_parent"
+  >
+
+    <include layout="@layout/title_bar" android:id="@+id/top"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:background="@color/bean"
+           android:id="@+id/tv1"
+           android:layout_below="@+id/top"
+           android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bm"
+        android:gravity="center"
+        android:background="@color/main"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:text="新增地址"
+            android:id="@+id/add"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv1"
+        android:layout_above="@+id/bm"
+         android:id="@+id/pullRefreshLayout"
+        android:layout_height="match_parent">
+
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+       android:id="@+id/recy"
+
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+</RelativeLayout>

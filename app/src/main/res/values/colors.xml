@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightgray">#ececf2</color>
+    <color name="darktgray">#a6a6ab</color>
+    <color name="colorgray">#ececf2</color>
+    <color name="goldtext">#FFB92D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hm_sea_bg">#FFA4C5</color>
+    <color name="white3">#3b000000</color>
+    <color name="dark_grey">#514A4A</color>
+    <color name="main_txt">#D9809E</color>
+
+    <color name="dark_g">#2F2F2F</color>
+
+    <color name="dark_grey5">#51414A</color>
+    <color name="tab_d">#999999</color>
+    <color name="tab_s">#ff3d01</color>
+    <color name="yell">#edde67</color>
+
+
+    <!-- 红包item使用的颜色 -->
+    <color name="wks_bg">#7cc7ea</color>
+    <color name="ysy_bg">#f2c775</color>
+    <color name="wsy_bg">#f498af</color>
+    <color name="ygq_bg">#b9b9b9</color>
+
+    <color name="dark_greyt">#878781</color>
+    <color name="com_name">#809BBE</color>
+    <color name="hit_txt">#B6B6AD</color>
+    <color name="main">#e95414</color>
+    <color name="line">#FB4855</color>
+    <color name="bean4">#333333</color>
+    <color name="gray">#a6a6ab</color>
+    <color name="gray2">#F5F5F5</color>
+    <color name="orange">#FE6C48</color>
+    <color name="dark22">#90000000</color>
+    <color name="live_copy">#DF504C</color>
+    <color name="live_share">#FA4862</color>
+    <color name="orange4">#ED726A</color>
+    <color name="orange3">#FDECE9</color>
+    <color name="help3">#6482A7</color>
+    <color name="help4">#EFEFEF</color>
+    <color name="rightone">#F6F6F6</color>
+    <color name="black">#464646</color>
+    <color name="choco">#D2C193</color>
+    <color name="blu">#20044B</color>
+    <color name="bluTxt">#C09AFC</color>
+
+
+    <color name="lightblack">#939191</color>
+    <color name="textcolor">#948C8C</color>
+    <color name="darkyellow">#E2910C</color>
+    <color name="dyellow">#F27B1D</color>
+    <color name="linecolor">#F2F2F2</color>
+    <color name="ser">#F6F6F6</color>
+    <color name="moneycolor">#E98164</color>
+    <color name="ligheblack">#2F2F2F</color>
+    <color name="touming">#008c4646</color>
+    <color name="red">#ff0132</color>
+    <color name="red2">#ec2121</color>
+    <color name="scan_bg">#7f000000</color>
+    <color name="dark">#000000</color>
+    <color name="title">#010101</color>
+    <color name="tab_sel">#c91a1b</color>
+    <color name="txt">#999999</color>
+    <color name="add_txt">#666666</color>
+    <color name="add_add_txt">#333333</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="ban_transparent">#B3000000</color>
+    <color name="san_transparent">#4D000000</color>
+    <color name="ser_transparent">#33000000</color>
+    <color name="shi_transparent">#1A000000</color>
+    <!--白色底透明值-->
+    <!--60%-->
+    <color name="liu_white_transparent">#99ffffff</color>
+    <!--50%-->
+    <color name="wu_white_transparent">#80ffffff</color>
+    <!--40%-->
+    <color name="shi_wu_white_transparent">#1Affffff</color>
+    <!--30%-->
+    <color name="san_wu_white_transparent">#4Dffffff</color>
+
+    <color name="main_shang_ping">#B3ff9000</color>
+
+    <color name="home_blue">#008cd6</color>
+    <color name="red_text_light">#E93F33</color>
+    <color name="green">#bfe8a8</color>
+    <color name="blue">#6EAEC7</color>
+    <color name="gray_view">#f5f5f5</color>
+    <color name="text_view">#292929</color>
+    <color name="coupon_item1">#e82e05</color>
+    <color name="coupon_item2">#d61a3e</color>
+
+    <!--下面这个颜色值是指定的，选择图片activity 的状态栏颜色值-->
+    <color name="multiple_image_select_primaryDark">#bfe8a8</color>
+</resources>

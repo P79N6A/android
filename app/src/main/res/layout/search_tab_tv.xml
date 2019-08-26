@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/white" />-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <LinearLayout
+                android:id="@+id/renwu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/renwu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到"
+                    android:textColor="#e34320"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/serach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_toLeftOf="@+id/msg"
+                android:layout_toRightOf="@+id/renwu"
+                android:background="@drawable/ioc_main_searchr_bar"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/serIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@mipmap/serach" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/serIv"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="搜索宝贝，购物更省钱"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/erMa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@mipmap/scan_code"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:text="消息"
+                android:textColor="#e34320"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/baen"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+
+        android:paddingRight="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@mipmap/icon_back" />
+
+        <RelativeLayout
+            android:id="@+id/serach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_toLeftOf="@+id/goBtn"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/all_serach"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch">
+
+            <ImageView
+                android:id="@+id/serIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/serach" />
+
+            <EditText
+                android:id="@+id/spend_serach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/serIv"
+                android:background="@null"
+                android:hint="请输入搜索内容"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/erMa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@mipmap/scan_code"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/goBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/main"
+            android:layout_centerVertical="true"
+            android:text="搜索" />
+    </RelativeLayout>
+
+
+    <com.example.ccy.ccyui.view.MyScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+             android:orientation="vertical"
+            android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="热门搜索"
+               android:padding="@dimen/dp_10"
+               android:textSize="12sp"
+               android:layout_height="wrap_content" />
+               <com.example.ccy.ccyui.view.MyGridView
+                   android:layout_width="match_parent"
+                    android:id="@+id/hotGv"
+                   android:numColumns="3"
+                   android:layout_height="wrap_content">
+
+               </com.example.ccy.ccyui.view.MyGridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:text="最近搜索"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/flex"
+                 android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+            <Button
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="清除历史搜索"
+                android:textSize="12sp"
+                android:id="@+id/sou_btn"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/change_ev"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </com.example.ccy.ccyui.view.MyScrollView>
+
+
+
+
+
+</LinearLayout>

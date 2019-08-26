@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_city_list"
+    android:layout_width="match_parent"
+                android:background="@color/baen"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Topbar_high"
+        android:id="@+id/list_topBar"
+
+        android:background="@color/white"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="20dp"
+            android:id="@+id/list_topIv"
+            android:background="@mipmap/icon_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/baen"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:text="城市选择"
+            android:textColor="@color/dark_grey"
+            style="@style/main_top_tv"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/list_topBar"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/add_list"
+            android:layout_height="wrap_content">
+        </ListView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <!--手机-->
+    <RelativeLayout
+        android:id="@+id/cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:onClick="onClick"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/MyItemTv"
+            android:layout_centerVertical="true"
+            android:text="手机" />
+
+        <ImageView
+            android:id="@+id/cell_iv"
+            style="@style/MyItemImage2" />
+
+
+        <TextView
+            android:id="@+id/cell_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/cell_iv"
+            android:text=""
+            android:textColor="@color/dark_grey" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/baen" />
+
+
+    <!--修改登录密码-->
+    <RelativeLayout
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:onClick="onClick"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/MyItemTv"
+            android:layout_centerVertical="true"
+            android:text="修改登录密码" />
+
+        <ImageView
+            android:id="@+id/sex_iv"
+            style="@style/MyItemImage2" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/baen" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_10"
+              android:background="@color/white"
+    android:layout_marginBottom="@dimen/dp_2"
+              android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/all"
+    android:layout_height="110dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/face"
+            android:layout_width="60dp"
+            fresco:roundedCornerRadius="8dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_order_state"
+            android:gravity="center"
+            android:text="已结算"
+
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/sp_12" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2.8"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:maxLines="1"
+            android:text="222"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/sp_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="2017"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_above="@+id/fuMoney"
+            android:gravity="center_vertical"
+            android:textColor="@color/bean2"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:padding="@dimen/dp_6"
+            android:layout_centerVertical="true"
+            android:id="@+id/fuMoney"
+            android:textSize="@dimen/sp_12"
+            android:text="订单总"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_width="match_parent"
+        android:layout_weight="3.6"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ddb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/dp_4"
+                android:src="@mipmap/photo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_order_y"
+                android:gravity="center"
+                android:text="我要晒单"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/dark_grey"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="晒一晒，拿咚咚币"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:paddingBottom="@dimen/dp_4"
+            android:textColor="@color/gray"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

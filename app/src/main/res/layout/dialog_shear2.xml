@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/bg_share">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/close"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/texll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/bg_xun"
+                    android:minHeight="60dp">
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/dp_30"
+                        android:lineSpacingExtra="6dp"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="40dp"
+                        android:padding="@dimen/dp_10"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_share_btn"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="一键复制"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/dyellow"
+                    android:textSize="10sp"
+                         android:layout_margin="10dp"
+                    android:text="复制后，打开手机淘宝APP 即可领券下单!"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logo"
+            android:elevation="30dp"
+            app:riv_border_color="#ffffff"
+            app:riv_border_width="3dp"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

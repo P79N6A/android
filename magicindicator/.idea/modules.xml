@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PullRefreshLayoutlibrary/PullRefreshLayoutlibrary.iml" filepath="$PROJECT_DIR$/../PullRefreshLayoutlibrary/PullRefreshLayoutlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../QianHuiN.iml" filepath="$PROJECT_DIR$/../QianHuiN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../alibaic/alibaic.iml" filepath="$PROJECT_DIR$/../alibaic/alibaic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ccyui/ccyui.iml" filepath="$PROJECT_DIR$/../ccyui/ccyui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jdsdk_lib/jdsdk_lib.iml" filepath="$PROJECT_DIR$/../jdsdk_lib/jdsdk_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library/library.iml" filepath="$PROJECT_DIR$/../library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../myokhttp/myokhttp.iml" filepath="$PROJECT_DIR$/../myokhttp/myokhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pullToRefresh/pullToRefresh.iml" filepath="$PROJECT_DIR$/../pullToRefresh/pullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pulltorefreshlibrary/pulltorefreshlibrary.iml" filepath="$PROJECT_DIR$/../pulltorefreshlibrary/pulltorefreshlibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/ioc_title">
+
+            <RelativeLayout
+                android:id="@+id/about_us_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/white_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="关于购了"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="购了商城，一款网购省钱，分享赚钱的APP！京东/淘宝购物必备，正品保障，领券购物立省！随时随地，分享好友，赚取佣金！分享越多，奖励越丰厚！
+
+省到就是赚到！大学生、宝妈、上班族购物性价比之选，海量精品，优质优价！
+
+要赚钱就「购了」！分享就能赚钱，成功推荐的新用户，他在购了商城的每一笔交易你都可以永久获得佣金奖励！
+"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

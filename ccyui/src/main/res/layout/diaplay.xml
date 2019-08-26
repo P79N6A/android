@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/diaplay"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/diaplay1"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/ivnot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_not_found" />
+        <TextView
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:id="@+id/diaplayTxt"
+            android:text="你还没有相关订单，快去逛逛吧"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/diaplay1"
+           android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:id="@+id/goBtn"
+        android:background="@drawable/dialog_f"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去逛逛"
+            android:textColor="@color/main"
+         android:padding="@dimen/dp_10"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

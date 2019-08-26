@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.judian.goule.store.activity.TelActivity">
+
+    <include layout="@layout/title_bar" />
+    <!--手机号-->
+    <LinearLayout
+        android:id="@+id/odl"
+        style="@style/kt_ll"
+        android:background="@color/baen">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="当前手机号是：" />
+
+        <TextView
+            android:id="@+id/odlTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!--手机号-->
+    <LinearLayout
+        android:id="@+id/ali"
+        style="@style/kt_ll">
+
+        <TextView
+            android:id="@+id/aliTv"
+            style="@style/kt_tv"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/telEt"
+            style="@style/kt_et"
+            android:layout_toRightOf="@+id/kit_tx_iv"
+            android:hint="请输入要绑定的手机号" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/baen" />
+
+    <!--验证码-->
+    <LinearLayout
+        android:id="@+id/code"
+        style="@style/kt_ll"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/codeTv"
+            style="@style/kt_tv"
+            android:layout_width="wrap_content"
+            android:text="验证码" />
+
+        <EditText
+            android:id="@+id/codeEt"
+            style="@style/kt_et"
+            android:layout_toRightOf="@+id/codeTv"
+
+            android:hint="请输入验证码"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/codeGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="获取验证码"
+            android:textColor="@color/orange" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/baen" />
+
+    <LinearLayout
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_kit_btn"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

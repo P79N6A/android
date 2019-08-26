@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">购了商城</string>
+    <string name="gold_count">累计( 总金币 )</string>
+    <string name="gold_number">0.0</string>
+    <string name="gold_misosu">1金币=1元人民币</string>
+    <string name="seven_day">七天走势</string>
+    <string name="coupon">本站搜优惠券</string>
+    <string name="Rebate">全网搜返利</string>
+    <string name="sousuo">搜索</string>
+    <string name="miaosha">秒杀榜单</string>
+    <string name="tuijian">小编推荐</string>
+    <string name="jiuyuan">九块九包邮</string>
+    <string name="xinshou">新手帮助</string>
+    <string name="tuiguang">推广赚钱</string>
+    <string name="shangxin">7864款</string>
+    <string name="more">更多</string>
+    <string name="yugujinbi">今日预估金币</string>
+    <string name="dingdan">今日订单数</string>
+    <string name="keyongyue">可用余额</string>
+    <string name="leijiyugu">累计预估</string>
+    <string name="lejitixian">累计提现</string>
+    <string name="lejidanshu">累计预估订单数</string>
+    <string name="lejiyouxiao">累计有效</string>
+    <string name="tixian">提现</string>
+    <string name="dingdanmingxi">订单明细</string>
+    <string name="moremoney">让金币赚的更多</string>
+    <string name="zhuanqian">每天必用三大赚钱神器</string>
+    <string name="xiaotishi">小提示:招募下线是提升收入最快的方法哦~</string>
+    <string name="wodetuandui">我的团队</string>
+    <string name="chengyuan">成员越多收益越多</string>
+    <string name="zhuangdatuandui">壮大团队</string>
+    <string name="shouyi">坐享永久收益</string>
+    <string name="tuanduidingdan">团队订单</string>
+    <string name="chakan">看看小伙伴都买了啥</string>
+    <string name="jinrishouru">今日团队收入</string>
+    <string name="qiehuan">切换分类</string>
+    <string name="scan_allcode_hint">将二维码或条形码对入取景框，即可自动扫描</string>
+
+    <string name="jif1">除商品本身不能正常兑换外，商品一经兑换，一律不退还积分，请用户兑换前仔细参照使用规则、使用说明、有效期等重要信息；
+</string>
+    <string name="jif2">对于每位用户限兑一次的商品，若发现多个用户帐号使用相同手机号或收货地址兑换同一商品，则自动取消订单，被扣除的积分不退还；</string>
+    <string name="jif3">通过非法途径获得积分后进行的正常兑换行为，或不按商品使用规则进行兑换，商家有权不提供服务；
+</string>
+    <string name="jif4">凡以不正当手段（包括但不限于作弊、扰乱系统、实施网络攻击等）进行兑换，平台有权终止该次兑换。
+</string>
+
+
+    <string name="reason">本产品是无公害，无残留，全天然的好东西，所以值得推荐，值得购买，哈哈哈哈哈哈哈哈哈</string>
+    <string name="one">
+      <![CDATA[
+        1.通过易集分购买的天\淘宝\京东商品，以<font color=\'#F44949\'>实际支付金额</font>按比例返还
+        ]]>
+    </string>
+    <!--<br>&#160 &#160 &#160 &#160合伙人分为黄金合伙人、白金合伙人、钻石合伙人、总监4个等级，升级条件和分红如下:</br>-->
+    <string name="agent2">
+      <![CDATA[
+        <br>   <b>&#160 &#160 &#160 &#160合伙人额外奖励所有一级粉丝(<font color=\'#F14E53\'>粉丝就是你邀请的人</font>)收益的 <font color=\'#F14E53\'>22%</font>,</b>
+
+        ]]>
+    </string>
+
+    <string name="agent3">
+      <![CDATA[
+       <b>二级粉丝的<font color=\'#F14E53\'>5%</font> 作为分红。</b></br>
+         <br> -----------</br>
+        ]]>
+    </string>
+    <string name="agent4">
+      <![CDATA[
+       <br><font color=\'#F14E53\'>2.白金合伙人 </font></br>
+        <br>   <b>&#160 &#160 &#160 &#160额外奖励所有一级粉丝收益的 <font color=\'#F14E53\'>22%</font>,</b>
+
+        ]]>
+    </string>
+
+    <string name="agent5">
+      <![CDATA[
+       <b>二级粉丝的<font color=\'#F14E53\'>7%</font> 作为分红；黄金合伙人达到以下 3个条件自动升级成为白金合伙人：</b></br>
+       <br><font color=\'#F14E53\'> 历史总收入超过500</font></br>
+       <br> <font color=\'#F14E53\'> 历史自己购物额满50元</font></br>
+       <br> <font color=\'#F14E53\'>一级粉丝中的合伙人大于30人</font></font></br>
+      <br> -----------</br>
+        ]]>
+    </string>
+
+    <string name="agent6">
+      <![CDATA[
+       <br><font color=\'#F14E53\'>3.钻石合伙人 </font></br>
+        <br><b>&#160 &#160 &#160 &#160额外奖励所有一级粉丝收益的 <font color=\'#F14E53\'>28%</font>,</b>
+
+        ]]>
+    </string>
+
+    <string name="agent7">
+      <![CDATA[
+       <b>二级粉丝的<font color=\'#F14E53\'>9%</font> 作为分红；白金合伙人达到以下 3个条件自动升级成为钻石合伙人：</b></br>
+       <br><font color=\'#F14E53\'> 历史总收入超过8000</font></br>
+       <br> <font color=\'#F14E53\'> 历史自己购物额满500元</font></br>
+       <br> <font color=\'#F14E53\'>一级粉丝中的合伙人大于300人</font></font></br>
+      <br> -----------</br>
+        ]]>
+    </string>
+    <string name="agent8">
+      <![CDATA[
+       <br><font color=\'#F14E53\'>4.总监 </font></br>
+        <br>  <b>&#160 &#160 &#160 &#160额外奖励所有一级粉丝收益的 <font color=\'#F14E53\'>32%</font>,</b>
+
+        ]]>
+    </string>
+
+    <string name="agent9">
+      <![CDATA[
+       <b>二级粉丝的<font color=\'#F14E53\'>11%</font> 作为分红；钻石合伙人达到以下 3个条件自动升级成为总监：</b></br>
+       <br><font color=\'#F14E53\'> 历史总收入超过20000</font></br>
+       <br> <font color=\'#F14E53\'> 历史自己购物额满1000元</font></br>
+       <br> <font color=\'#F14E53\'>一级粉丝中的合伙人大于1000人</font></font></br>
+      <br> -----------</p>
+        ]]>
+    </string>
+
+
+    <string name="two">
+       <![CDATA[
+        2.如把商品添加到天猫\淘宝\京东购物车，须再有效的倒计时内下单，否则<font color=\'#F44949\'>无咚咚币返还</font>
+     ]]>
+    </string>
+    <string name="three">
+             <![CDATA[
+        3.如在天猫\淘宝\京东商家内购买其他非易集分合作商品，则<font color=\'#F44949\'>无返还</font>
+         ]]>
+    </string>
+    <string name="four">
+             <![CDATA[
+        4.下单后，进入"我的"——"我的返易币订单"，即可查看订单状态，如确认收货后，未看到订单信息或返易币，请联系客服查询
+         ]]>
+    </string>
+
+    <string name="scan_barcode_title">条形码扫描</string>
+    <string name="scan_qrcode_title">二维码扫描</string>
+    <string name="scan_allcode_title">二维码或条形码扫描</string>
+    <string name="scan_barcode_hint">将条形码对入取景框，即可自动扫描</string>
+    <string name="scan_qrcode_hint">将二维码对入取景框，即可自动扫描</string>
+    <string name="nic">注意：昵称最多可输入12个字符哦~</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

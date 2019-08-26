@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="15dp"
+                           android:orientation="horizontal">
+                               <TextView
+                                   android:layout_width="0dp"
+                                   android:layout_weight="2"
+                                   android:layout_height="wrap_content" />
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:textSize="18sp"
+                                   android:textColor="#CCB887"
+                                   android:id="@+id/pic"
+                                   android:layout_height="wrap_content"
+                                   android:text="75.0"/>
+                               <TextView
+                                   android:layout_width="0dp"
+                                   android:layout_weight="2.5"
+                                   android:textSize="14sp"
+                                   android:textColor="#CCB887"
+                                   android:layout_height="wrap_content"
+                                   android:text=" 积分"/>
+                       </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="3"
+                                    android:textSize="12sp"
+                                    android:textColor="#B6B6B6"
+                                    android:id="@+id/numx"
+                                    android:layout_height="wrap_content"
+                                    android:text="(剩余10件)"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="3"
+                                    android:id="@+id/godId"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#4F4F4F"
+                                    android:text="商品编号: "/>
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            style="@style/Line1dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/typeStr"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:text="口味"/>
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        style="@style/Line1dp" />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:text="数量"/>
+                       <com.judian.goule.store.other.CustomNum
+                           android:id="@+id/num_set"
+                           android:layout_width="110dp"
+                           android:layout_height="30dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_black"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:id="@+id/goPay"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="立即下单"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/img"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="0.21"
+                    android:background="@drawable/round_white"
+                    android:padding="5dp"
+              />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/close"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@mipmap/btn_close_pressed"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

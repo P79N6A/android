@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <include layout="@layout/title_bar"></include>
+
+
+    <com.example.ccy.ccyui.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+        android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/kitimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/kitimg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_height="10dp"/>
+
+    <!--支付宝-->
+    <LinearLayout
+        style="@style/kt_ll"
+        android:id="@+id/ali">
+        <TextView
+            style="@style/kt_tv"
+            android:text="支付宝"
+            android:id="@+id/aliTv"/>
+
+        <EditText
+            style="@style/kt_et"
+            android:focusable="false"
+            android:id="@+id/aliEt"
+            android:hint=""
+            android:layout_toRightOf="@+id/kit_tx_iv"
+       />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="1dp"/>
+    <!--手机号-->
+    <LinearLayout
+        style="@style/kt_ll"
+        android:id="@+id/tel">
+        <TextView
+            style="@style/kt_tv"
+            android:text="手机号"
+            android:id="@+id/telTv"
+        />
+
+        <EditText
+            style="@style/kt_et"
+            android:id="@+id/telEt"
+            android:focusable="false"
+            android:layout_toRightOf="@+id/telTv"
+            android:inputType="phone"
+        />
+    </LinearLayout>
+        <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="1dp"/>
+
+    <!--验证码-->
+    <LinearLayout
+        style="@style/kt_ll"
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+            style="@style/kt_tv"
+            android:id="@+id/codeTv"
+            android:layout_width="wrap_content"
+            android:text="验证码"
+           />
+
+        <EditText
+            style="@style/kt_et"
+            android:id="@+id/codeEt"
+            android:hint="请输入验证码"
+
+            android:layout_toRightOf="@+id/codeTv"
+            android:inputType="phone"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/orange"
+            android:text="获取验证码"
+            android:id="@+id/codeGet"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="1dp"/>
+
+
+    <!--提现金额-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/kit_tx"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.40"
+            android:textColor="@color/dark_grey"
+            android:textSize="16dp"
+            android:text="提现金额"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/kit_tx_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_weight="3.32"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:hint="请输入提现金额"
+            android:id="@+id/kitEt"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/baen"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+
+            android:text="可提现金额："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0金币"
+            android:layout_toRightOf="@+id/tv1"
+            android:id="@+id/cis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/kit_butn"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_kit_btn"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="提现"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/help"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="关于提现的相关问题，"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="请点击这里"
+            android:id="@+id/go"
+            android:textColor="@color/y_sel"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+        </LinearLayout>
+
+    </com.example.ccy.ccyui.view.MyScrollView>
+</LinearLayout>

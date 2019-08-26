@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/ioc_title">
+
+            <RelativeLayout
+                android:id="@+id/my_qr_code_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/white_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:text="我的推荐码"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/isLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="74dp">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    fresco:backgroundImage="@mipmap/head_icon"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="90dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tv_user_name"
+                    android:background="@drawable/bg_my_member"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_6">
+
+                    <ImageView
+                        android:id="@+id/memberIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/member" />
+
+                    <TextView
+                        android:id="@+id/memberTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_qrcord"
+            android:layout_width="295dp"
+            android:layout_height="295dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shixinyuan_bai">
+
+            <ImageView
+                android:id="@+id/iv_my_qrcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ioc_my_qr_code">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/my_qr_code_view"
+                android:text="我的推荐码"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/my_qr_code_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/my_yq_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_qr_code_view"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="39dp">
+
+            <RelativeLayout
+                android:id="@+id/my_qr_code_fz_yaoqingma_rl"
+                android:layout_width="136dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="23dp"
+                android:layout_toLeftOf="@+id/my_qr_code_view1"
+                android:background="@drawable/ioc_my_qr_code_button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="复制邀请码"
+                    android:textColor="#e4471e"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/my_qr_code_view1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:id="@+id/my_qr_code_share_poster_rl"
+                android:layout_width="136dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/my_qr_code_view1"
+                android:background="@drawable/ioc_my_qr_code_button">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="分享邀请海报"
+                    android:textColor="#e4471e"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baen"
+                android:orientation="vertical">
+
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id= "@+id/pullRefreshLayout"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_4"
+            android:id="@+id/list"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        </com.baoyz.widget.PullRefreshLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|bottom"
+        android:src="@mipmap/go_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:id="@+id/floBtn" />
+
+
+
+</RelativeLayout>

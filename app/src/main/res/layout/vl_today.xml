@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:src="@drawable/ioc_home_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/oneIv"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            app:layout_scrollFlags="scroll"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/twoIv"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="2.5dp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/threeIv"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:paddingLeft="2.5dp"
+                android:paddingRight="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            app:layout_scrollFlags="scroll"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fuorIv"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="2.5dp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/fiveIv"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_weight="1"
+                android:paddingLeft="2.5dp"
+                android:paddingRight="5dp" />
+
+
+        </LinearLayout>
+
+        <!--唯品会  京东商城  已经做隐藏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bean"
+            android:orientation="horizontal"
+            android:paddingTop="1dp"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sixIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sevenIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:scaleType="fitXY" />
+
+
+        </LinearLayout>
+        <!--唯品会  京东商城  已经做隐藏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bean"
+            android:orientation="horizontal"
+            android:paddingTop="1dp"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/eightIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/nineIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:scaleType="fitXY" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

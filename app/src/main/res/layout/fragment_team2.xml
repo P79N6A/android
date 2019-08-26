@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/red"
+              tools:context="com.judian.goule.store.fragment.Team1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/jin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="今日榜单"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:id="@+id/jinIm"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/team_bg"
+                android:scaleType="fitXY"
+                android:layout_height="6dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/zhou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="周榜单"
+                android:textColor="@color/bean"
+                android:textSize="12sp"/>
+
+
+            <ImageView
+                android:layout_width="8dp"
+                android:id="@+id/zhouIm"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/team_bg"
+                android:scaleType="fitXY"
+                android:layout_height="6dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/zong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="总榜单"
+                android:textColor="@color/bean"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:id="@+id/zongIm"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/team_bg"
+                android:scaleType="fitXY"
+                android:layout_height="6dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="名次"
+            android:textSize="14sp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="用户名"
+            android:textSize="14sp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="上级用户"
+            android:textSize="14sp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="带来收入"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/list"
+
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:padding="@dimen/dp_4"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:background="#FCFCFC"
+     android:layout_margin="5dp"
+     android:layout_height="match_parent">
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_marginLeft="@dimen/dp_2"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="200dp"
+           android:id="@+id/icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_2"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_4"
+            android:text="标题"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/dark_grey"
+             android:id="@+id/title"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+         android:maxLines="4"
+        android:padding="@dimen/dp_4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+           android:text="nihaadddddd"
+        android:id="@+id/txt"
+        android:textSize="@dimen/sp_12"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_6"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/touxiang"
+            app:riv_border_color="@color/white"
+            android:id="@+id/face"
+            android:layout_centerVertical="true"
+            app:riv_border_width="2dp"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:text="名字"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/face"
+            android:layout_height="wrap_content"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:text="23"
+             android:id="@+id/zhan"
+             android:textColor="#9A9A9A"
+             android:layout_centerVertical="true"
+
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/dp_10"
+             android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:id="@+id/zhanIv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_toLeftOf="@+id/zhan"
+                  android:src="@mipmap/zhan1"
+            android:layout_height="15dp"/>
+    </RelativeLayout>
+          </LinearLayout>
+
+ </LinearLayout>
+</LinearLayout>

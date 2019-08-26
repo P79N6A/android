@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content" android:minWidth="60dp" android:paddingTop="@dimen/dp_6"
+    android:id="@+id/all" android:background="@color/white"
+    android:layout_height="40dp">
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dp_6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_title"
+        android:textSize="16sp"
+        android:text="化妆"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/news_title"
+        android:id="@+id/ss"
+        android:background="@color/y_money"
+        android:layout_height="2dp"/>
+</RelativeLayout>

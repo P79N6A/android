@@ -1,0 +1,341 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id= "@+id/scroll"
+        android:layout_width= "fill_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+         android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="搜返利"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:layout_height="@dimen/dp_40" />
+
+
+    <LinearLayout
+        android:background="#FE4F3F"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fl_ll_tv"
+                android:text="搜索淘宝/天猫商品"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fl_ll_tv1"
+                android:text="购物最高返利"
+                android:gravity="center"/>
+            <TextView
+                android:textSize="14dp"
+                android:textColor="@color/yell"
+                android:layout_toRightOf="@+id/fl_ll_tv1"
+                android:text="80%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:background="@drawable/sou_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/edit_search"
+                android:id="@+id/fl_sou_im"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <!--android:visibility="gone"-->
+
+
+            <EditText
+                android:layout_toLeftOf="@+id/flrl"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:id="@+id/fl_sou_et"
+                android:layout_marginLeft="6dp"
+                android:hint="输入淘宝或关键字"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/fl_sou_im" />
+
+
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/flrl"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="6dp"
+                    android:src="@mipmap/close"
+                    android:id="@+id/fl_sou_guan"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+                <TextView
+                    android:gravity="center"
+                    android:background="#FF9387"
+                    android:text="搜索"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/seekBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/fl_xts_tv"
+            android:textSize="16dp"
+            android:textColor="@color/dark_grey"
+            android:layout_marginLeft="10dp"
+            android:text="3步拿返利精准搜索返利"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/bean"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:textColor="@color/tab_s"
+                android:gravity="center"
+                android:background="@drawable/tb_num_bg"
+                android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_marginLeft="@dimen/dp_4"
+                 android:text="在淘宝/天猫复制商品标题"
+                 android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2"
+                android:textColor="@color/tab_s"
+                android:gravity="center"
+                android:background="@drawable/tb_num_bg"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="在搜索框里搜索购买商品"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="3"
+                android:gravity="center"
+                android:textColor="@color/tab_s"
+                android:background="@drawable/tb_num_bg"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:text="确认收货后返利到账"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:textColor="@color/dark_grey"
+                android:layout_marginLeft="10dp"
+                android:text="详细教程"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/bean"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1 "
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/dark_grey"
+                android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:textColor="@color/dark_grey"
+                 android:text="打开手机淘宝/天猫，找到想要买的宝贝。"
+                 android:textStyle="bold"
+                 android:layout_height="wrap_content" />
+        </LinearLayout>
+         <ImageView
+             android:layout_width="match_parent"
+             android:src="@mipmap/pic1"
+             android:scaleType="centerCrop"
+             android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2 "
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/dark_grey"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:text="长按标题区域，点击出现的“拷贝”按钮，即可复制宝贝标题。"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/pic2"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="3 "
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/dark_grey"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:text="打开返利APP，长按搜索框，点击“粘贴”，再次点击搜索就能搜索到刚才拷贝的内容了。"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/pic3"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="4 "
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/dark_grey"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:text="在返利搜索结果页面内，即可找到该宝贝，然后点击下单购买"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/pic4"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

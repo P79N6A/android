@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tab6"
+        layout="@layout/search_tab_tv" />
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/pullRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab6">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f8f8f8" />
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp1"
+        android:layout_width="2dp"
+        android:layout_height="2dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/floBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:src="@mipmap/go_top"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

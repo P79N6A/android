@@ -1,0 +1,360 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+             tools:context="com.judian.goule.store.fragment.TeamFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<com.example.ccy.ccyui.view.MyScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_above="@+id/bottom"-->
+        <!--android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="@dimen/dp_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="我的成员"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="16sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="今日新增"
+                                android:gravity="right"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/cyTNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:gravity="right"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/sp_12"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 人"
+                                android:gravity="left"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:gravity="right"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/cyANum"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=""
+                                android:gravity="right"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/sp_12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 人"
+                                android:gravity="left"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="带来收入"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="今日"
+                                android:gravity="right"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/srTNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="23"
+                                android:gravity="right"
+                                android:layout_weight="5"
+                                android:textColor="@color/y_money"
+                                android:textSize="@dimen/sp_12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 金币"
+                                android:gravity="left"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="全部"
+                                android:gravity="right"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/srANum"
+                                android:layout_weight="5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2222222"
+                                android:gravity="right"
+                                android:textColor="@color/y_money"
+                                android:textSize="@dimen/sp_12"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="5"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 金币"
+                                android:gravity="left"
+                                android:layout_weight="5"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/baen"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <LinearLayout
+                    android:id="@+id/mx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="明细列表"
+                        android:textSize="@dimen/sp_12"
+                       />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:background="@color/red">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@mipmap/team_pai"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="排行榜"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="@dimen/sp_12"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+                 <FrameLayout
+                     android:layout_width="match_parent"
+                     android:id="@+id/team_frg"
+                     android:layout_height="match_parent">
+                 </FrameLayout>
+
+        </LinearLayout>
+
+    <!--</com.example.ccy.ccyui.view.MyScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+          android:orientation="vertical"
+        android:id="@+id/bottom"
+        android:background="@mipmap/team_bg_bm"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+    </LinearLayout>
+
+</RelativeLayout>

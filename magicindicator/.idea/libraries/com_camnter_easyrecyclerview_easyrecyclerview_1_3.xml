@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.camnter.easyrecyclerview:easyrecyclerview-1.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/27dc4ae7b8e0237eb4de257ccbf75b8e77240633/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/27dc4ae7b8e0237eb4de257ccbf75b8e77240633/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.camnter.easyrecyclerview/easyrecyclerview/1.3/55fa22f8eef4e8e090a7923dc57917ca858158c5/easyrecyclerview-1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

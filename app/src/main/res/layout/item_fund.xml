@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/dialog"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+          style="@style/MyFundItem"
+            android:textSize="16dp"
+            android:text="添加时间："
+            />
+        <TextView
+            style="@style/MyFundItem"
+            android:id="@+id/item_fundTime"
+            android:text="2017-02-07 17:36"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/baen"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/MyFundItem"
+            android:textSize="16dp"
+
+            android:text="变更金额："
+            />
+        <TextView
+            style="@style/MyFundItem"
+            android:id="@+id/item_fundPic"
+            android:text="0.01"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/baen"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/MyFundItem"
+            android:textSize="16dp"
+
+            android:text="描述："
+            />
+        <TextView
+            style="@style/MyFundItem"
+            android:id="@+id/item_fundMs"
+            android:text="购买消费0.01"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/baen"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/MyFundItem"
+            android:textSize="16dp"
+
+            android:text="状态："
+            />
+        <TextView
+            style="@style/MyFundItem"
+            android:id="@+id/item_fundStatus"
+            android:text="操作成功"
+            />
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_height="5dp" />
+</LinearLayout>

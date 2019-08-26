@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_szalipay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/baen" />
+
+    <!--支付宝-->
+    <LinearLayout
+        android:id="@+id/ali"
+        style="@style/kt_ll"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/bg_ali">
+
+
+        <EditText
+            android:id="@+id/aliEt"
+            style="@style/kt_et"
+            android:layout_toRightOf="@+id/kit_tx_iv"
+            android:hint="请输入支付宝账号" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/name"
+        style="@style/kt_ll"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/bg_ali">
+
+        <EditText
+            android:id="@+id/nameet"
+            style="@style/kt_et"
+            android:hint="请输入您的真实姓名" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/codeL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+
+        android:background="@drawable/bg_ali"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_hqcote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/getCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_vcode_ali"
+                android:gravity="center"
+                android:padding="@dimen/dp_6"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/alipay_butn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_ali_ok"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#BB5166"
+        android:textSize="14dp" />
+</LinearLayout>

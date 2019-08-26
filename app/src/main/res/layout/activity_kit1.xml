@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.judian.goule.store.activity.Kit1Activity">
+
+
+
+    <include layout="@layout/title_bar"/>
+<TextView
+    android:layout_width="match_parent"
+    android:background="@color/baen"
+    android:layout_height="1dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:background="#F0F0F0"
+        android:id="@+id/kitW"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/alipay"
+            android:id="@+id/iv"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/iv"
+            android:padding="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:text="name"
+                android:id="@+id/name"
+                android:textColor="#B0B0B0"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="name"
+                android:textColor="#B0B0B0"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:id="@+id/aliName"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="#F8F8F8"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:textSize="@dimen/sp_12"
+            android:id="@+id/maney"
+            android:inputType="number"
+            android:background="@null"
+            android:hint="请输入提取金额，当前可提取0元"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="确认提取"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/goKit"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@drawable/bg_kit_btn"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

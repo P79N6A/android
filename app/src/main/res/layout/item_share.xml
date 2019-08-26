@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_20"
+            android:layout_height="160dp">
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:id="@+id/ll1"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:id="@+id/coupon"
+                        android:background="@drawable/bg_jian"
+                        android:layout_height="16dp">
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_fan"
+                            android:gravity="center"
+                            android:text="券"
+                            android:textSize="12sp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0.00"
+                            android:paddingLeft="@dimen/dp_4"
+                            android:paddingRight="@dimen/dp_4"
+                            android:textColor="#ff6563"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="现价:"
+                        android:textColor="#B6B6B6"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="¥"
+                        android:gravity="bottom"
+                        android:visibility="gone"
+                        android:textSize="8sp"
+                        android:layout_marginBottom="@dimen/dp_6"
+                        android:textColor="@color/red"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="45.00"
+                        android:textSize="@dimen/sp_14"
+                        android:id="@+id/pic"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/picOdl"
+                    android:text="现价"
+
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:layout_above="@+id/ll1"
+                    android:textColor="#B6B6B6"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ll_txt"
+                    android:text="标题"
+                    android:lineSpacingExtra="@dimen/dp_4"
+                    android:textSize="@dimen/sp_14"
+                    android:maxLines="3"
+                    android:textColor="#505050"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@mipmap/ermbg"
+                android:layout_height="120dp">
+                <ImageView
+                    android:layout_width="95dp"
+                    android:id="@+id/iv2Code"
+
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="95dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="长按识别二维码"
+                    android:textSize="10sp"
+                    android:textColor="#F47645"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

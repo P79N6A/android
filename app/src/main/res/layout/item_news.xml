@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/icon"
+            android:src="@mipmap/assistant"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+
+            android:layout_toRightOf="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:text="返利助手"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:textColor="@color/gray"
+                android:id="@+id/msg"
+                android:singleLine="true"
+                android:lines="1"
+                android:text="订单返利信息在这里查看哦~"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

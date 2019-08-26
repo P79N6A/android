@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nickname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <include layout="@layout/title_bar"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#E4E4E4" />
+    <!--昵称-->
+    <LinearLayout
+        style="@style/kt_ll"
+        android:id="@+id/tel">
+        <TextView
+            style="@style/kt_tv"
+            android:text="昵称"
+            android:id="@+id/telTv"
+            />
+
+        <EditText
+            style="@style/kt_et"
+            android:maxLength = "12"
+            android:hint="请输入昵称"
+            android:id="@+id/nick_et"
+            android:layout_toRightOf="@+id/telTv"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/baen"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="1dp"/>
+    <TextView
+        android:text="@string/nic"
+        android:textColor="@color/medium_grey"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/commit"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_kit_btn"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

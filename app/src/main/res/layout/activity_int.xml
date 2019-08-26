@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    tools:context="com.judian.goule.store.activity.IntActivity">
+
+      <include layout="@layout/title_bar"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#E6E6E6"
+        android:layout_height="1dp" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+                android:orientation="vertical"
+               android:paddingTop="@dimen/dp_20"
+               android:background="@color/white"
+               android:layout_height="wrap_content">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+
+                 android:layout_height="wrap_content">
+                  <ImageView
+                      android:layout_width="120dp"
+                      android:layout_centerHorizontal="true"
+                      android:background="@mipmap/jibg"
+                      android:layout_height="120dp" />
+
+
+               <LinearLayout
+                   android:layout_width="120dp"
+                   android:gravity="center"
+                      android:layout_centerHorizontal="true"
+                   android:orientation="vertical"
+
+                   android:layout_height="120dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="当前可用积分"
+                       android:layout_height="wrap_content" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:text="0"
+                           android:layout_marginTop="@dimen/dp_10"
+                           android:textColor="@color/tab_red"
+                           android:textSize="23sp"
+                           android:id="@+id/jifen"
+                           android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+
+             </RelativeLayout>
+
+
+               <TextView
+                   android:layout_marginTop="17dp"
+                   android:layout_width="match_parent"
+                   android:text="去兑换"
+                   android:layout_marginBottom="@dimen/dp_40"
+                   android:layout_marginLeft="@dimen/dp_20"
+                   android:layout_marginRight="@dimen/dp_20"
+                   android:background="@drawable/bg_kit_btn"
+                   android:textSize="14sp"
+                   android:id="@+id/goInt"
+                   android:textColor="@color/white"
+                   android:gravity="center"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+
+
+
+      </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/dp_20"
+    android:layout_height="35dp">
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/tab_red"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="怎么获得积分？"
+        android:textColor="#3E3E3E"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+     <LinearLayout
+          android:orientation="horizontal"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="5"
+             android:paddingTop="20dp"
+             android:paddingBottom="@dimen/dp_20"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@mipmap/get_jifen_icon0"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:text="1.购物得积分"
+                 android:textColor="#5E4A46"
+                 android:gravity="center"
+                 android:textSize="12sp"
+                 android:background="@drawable/bg_ji_btn"
+                 android:layout_marginTop="12dp"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:paddingTop="20dp"
+             android:layout_weight="5"
+             android:paddingBottom="@dimen/dp_20"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@mipmap/get_jifen_icon1"
+                 android:layout_height="wrap_content" />
+
+             <TextView
+                 android:id="@+id/textView4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="12dp"
+                 android:background="@drawable/bg_ji_btn"
+                 android:gravity="center"
+                 android:text="2.签到得积分"
+                 android:textSize="12sp"
+                 android:textColor="#5E4A46" />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:paddingTop="20dp"
+             android:layout_weight="5"
+             android:paddingBottom="@dimen/dp_20"
+             android:layout_height="wrap_content">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@mipmap/get_jifen_icon2"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="12dp"
+                 android:text="3.分享的积分"
+                 android:textColor="#5E4A46"
+                 android:gravity="center"
+                 android:textSize="12sp"
+                 android:background="@drawable/bg_ji_btn"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+     </LinearLayout>
+
+
+
+</LinearLayout>

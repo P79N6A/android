@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/white3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_20">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_share">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/bg_share1"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="分享失败"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/stateTv"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/share_dg"
+                android:id="@+id/stateIv"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="继续分享>"
+                android:gravity="center"
+                android:id="@+id/goShare"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_kit_btn"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:src="@mipmap/close3"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
